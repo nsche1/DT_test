@@ -1,0 +1,1 @@
+window.___gcfg={lang:"fr"},function(){var n=document.createElement("script"),t;n.type="text/javascript";n.async=!0;n.src="https://apis.google.com/js/plusone.js";t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(n,t)}()

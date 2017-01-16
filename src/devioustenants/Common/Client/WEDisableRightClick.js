@@ -1,0 +1,1 @@
+$(document).ready(function(){if(WEInfoPage.RenderMode=="Editor")return!1;for(Elem in OEConfWEDisableRightClick)Conf=OEConfWEDisableRightClick[Elem],WEDisableRightClick.Initialize(Conf)});var WEDisableRightClick={Initialize:function(n){$(document).bind("contextmenu",function(t){t.preventDefault();text=OE.Common.getLocString(n.Text);text!=""&&alert(text)})}}

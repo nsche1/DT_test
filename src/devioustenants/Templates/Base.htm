@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="generator" content="openElement (1.56.4)" />
+  <link id="openElement" rel="stylesheet" type="text/css" href="../WEFiles/Css/v02/openElement.css?v=50491101600" />
+  <link id="siteFonts" rel="stylesheet" type="text/css" href="../Files/Fonts/Fonts.css?v=50491101600" />
+  <link id="OEBase" rel="stylesheet" type="text/css" href="Base.css?v=50491101600" />
+  <!--[if lte IE 7]>
+  <link rel="stylesheet" type="text/css" href="../WEFiles/Css/ie7.css?v=50491101600" />
+  <![endif]-->
+  <script type="text/javascript">
+   var WEInfoPage = {"PHPVersion":"phpOK","OEVersion":"1-56-4","PagePath":"Templates/Base","Culture":"DEFAULT","LanguageCode":"EN","RelativePath":"../","RenderMode":"Export","PageAssociatePath":"Templates/Base","EditorTexts":null};
+  </script>
+  <script type="text/javascript" src="../WEFiles/Client/jQuery/1.10.2.js?v=50491101600"></script>
+  <script type="text/javascript" src="../WEFiles/Client/jQuery/migrate.js?v=50491101600"></script>
+  <script type="text/javascript" src="../WEFiles/Client/Common/oe.min.js?v=50491101600"></script>
+  <script type="text/javascript" src="Base(var).js?v=50491101600"></script>
+  <script type="text/javascript" src="../WEFiles/EG/EG8ced4f68/Js/field-def-text-v59.js?v=50491101600"></script>
+  <style id="OEScriptManager" type="text/css">
+   /* transition effect */
+   .transitions, .transitions a {
+   	-webkit-transition: all 1s ease;
+   	-moz-transition: all 1s ease;
+   	-o-transition: all 1s ease;
+   	transition:	all 1s ease;
+   }
+   
+   
+   #WEToTop {
+   	position:fixed !important;
+   	z-index:99999 !important;
+   }
+   #WEToTop:not(.c-visible) {
+   	bottom:-35px !important;
+   	opacity:0;
+   }
+  </style>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <script type="text/javascript">
+   $(function(){
+   	
+   	// Button "Back to top of the page" / Bouton "Vers le haut de la page"
+   
+   	$('body').prepend('<a name="page-top" id="page-top">'); // create anchor at the page top
+       
+   	$(window).on('scroll', function(){
+   		$('#WEToTop').toggleClass('c-visible', ($(window).scrollTop() > 100)); // show the button if vertical scroll is at least 100px
+   	}).trigger('scroll'); // update on opening the page	
+   	
+   });
+   $(function(){
+   	// Fix problem with "fixed"(parallax) background on iPad/iPhone
+   	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+   	var iOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream; // MSStream is to filter out IE11
+   	if (iOS) {
+   		$('.fix-iOS-bg').css('background-attachment', 'scroll');
+   	}	
+   });
+  </script>
+ </head>
+ <body class="" data-gl="{&quot;KeywordsHomeNotInherits&quot;:false}">
+  <form id="XForm" method="post" action="#"></form>
+  <div id="XBody" class="BaseDiv RWidth OEPageXbody OESK_XBody_Default" style="z-index:0">
+   <div class="OESZ OESZ_DivContent OESZG_XBody">
+    <div class="OESZ OESZ_XBodyContent OESZG_XBody OECT OECT_Content OECTRel"></div>
+    <div class="OESZ OESZ_XBodyFooter OESZG_XBody OECT OECT_Footer OECTAbs">
+     <div id="WEToTop" class="BaseDiv RBoth OEWELinkButton OESK_WELinkButton_Default OEGo  transitions" style="z-index:1" onclick="return OE.Navigate.open(event,'#page-top',1)">
+      <div class="OESZ OESZ_DivContent OESZG_WEToTop">
+       <a class="OESZ OESZ_Text OESZG_WEToTop ContentBox" href="#page-top"><br /></a>
+      </div>
+     </div>
+    </div>
+    <div id="WEa62f4ad7d1" class="BaseDiv RBoth OEEG8ced4f68 OESK_EG8ced4f68_Default" style="z-index:3;display: none !important;">
+     <div class="OESZ OESZ_DivContent OESZG_WEa62f4ad7d1"></div>
+    </div>
+   </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+  $(function(){// Scroll reveal (apparition au scroll) :
+  	(new ScrollReveal()).reveal('.apply-smoove', { duration: 1000, distance: '500px' });
+  });
+  </script>
+ </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="generator" content="openElement (1.56.4)" />
+  <link id="openElement" rel="stylesheet" type="text/css" href="../WEFiles/Css/v02/openElement.css?v=50491101600" />
+  <link id="siteFonts" rel="stylesheet" type="text/css" href="../Files/Fonts/Fonts.css?v=50491101600" />
+  <link id="OETemplate1" rel="stylesheet" type="text/css" href="Base.css?v=50491101600" />
+  <link id="OEBase" rel="stylesheet" type="text/css" href="preloader.css?v=50491101600" />
+  <!--[if lte IE 7]>
+  <link rel="stylesheet" type="text/css" href="../WEFiles/Css/ie7.css?v=50491101600" />
+  <![endif]-->
+  <script type="text/javascript">
+   var WEInfoPage = {"PHPVersion":"phpOK","OEVersion":"1-56-4","PagePath":"Templates/preloader","Culture":"DEFAULT","LanguageCode":"EN","RelativePath":"../","RenderMode":"Export","PageAssociatePath":"Templates/preloader","EditorTexts":null};
+  </script>
+  <script type="text/javascript" src="../WEFiles/Client/jQuery/1.10.2.js?v=50491101600"></script>
+  <script type="text/javascript" src="../WEFiles/Client/jQuery/migrate.js?v=50491101600"></script>
+  <script type="text/javascript" src="../WEFiles/Client/Common/oe.min.js?v=50491101600"></script>
+  <script type="text/javascript" src="preloader(var).js?v=50491101600"></script>
+  <script type="text/javascript" src="../WEFiles/EG/EG8ced4f68/Js/field-def-text-v59.js?v=50491101600"></script>
+  <style id="OEScriptManager" type="text/css">
+   /* transition effect */
+   .transitions, .transitions a {
+   	-webkit-transition: all 1s ease;
+   	-moz-transition: all 1s ease;
+   	-o-transition: all 1s ease;
+   	transition:	all 1s ease;
+   }
+   
+   
+   #WEToTop {
+   	position:fixed !important;
+   	z-index:99999 !important;
+   }
+   #WEToTop:not(.c-visible) {
+   	bottom:-35px !important;
+   	opacity:0;
+   }
+   
+   body {
+       overflow: hidden;
+   }
+   
+   /* Preloader */
+   
+   #preloader {
+       position:fixed;
+       top:0;
+       left:0;
+       right:0;
+       bottom:0;
+       background-color:#fff; /* change if the mask should have another color then white */
+       z-index:9999999; /* makes sure it stays on top */
+   }
+   
+   #status {
+       width:250px;
+       height:250px;
+       position:absolute;
+       left:50%; /* centers the loading animation horizontally one the screen */
+       top:50%; /* centers the loading animation vertically one the screen */
+       background-image:url(Files/Image/preloader.gif); /* path to your loading animation */
+       background-repeat:no-repeat;
+       background-position:center;
+       margin:-100px 0 0 -100px; /* is width and height divided by two */
+   }
+  </style>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <script type="text/javascript">
+   $(function(){
+   	
+   	// Button "Back to top of the page" / Bouton "Vers le haut de la page"
+   
+   	$('body').prepend('<a name="page-top" id="page-top">'); // create anchor at the page top
+       
+   	$(window).on('scroll', function(){
+   		$('#WEToTop').toggleClass('c-visible', ($(window).scrollTop() > 100)); // show the button if vertical scroll is at least 100px
+   	}).trigger('scroll'); // update on opening the page	
+   	
+   });
+   $(function(){
+   	// Fix problem with "fixed"(parallax) background on iPad/iPhone
+   	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+   	var iOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream; // MSStream is to filter out IE11
+   	if (iOS) {
+   		$('.fix-iOS-bg').css('background-attachment', 'scroll');
+   	}	
+   });
+   (function(){
+   
+   	var tID = null;
+   	
+   	$('#status').css('background-image', 'url("' + $('#PRELOADIMG').find('img').attr('src') + '")');
+   	
+   	function onContentLoaded() {
+   		// call only once:
+   		$(window).off('load.oePreloader');
+   		clearTimeout(tID);
+   		
+   		// remove preloader:
+   		$('#status').fadeOut(); // will first fade out the loading animation
+   		$('#preloader').delay(250).fadeOut('slow'); // will fade out the white DIV that covers the website.
+   		$('body').css({'overflow':'visible'});
+   	}
+   	
+   	$(function(){
+   		var tID = setTimeout(onContentLoaded, 7000); // wait max 7 seconds after the page structure is loaded
+   	})
+   	$(window).on('load.oePreloader', onContentLoaded); // make sure the whole site is loaded
+   
+   })();
+  </script>
+ </head>
+ <body class="RWAuto" data-gl="{&quot;KeywordsHomeNotInherits&quot;:false}">
+  <form id="XForm" method="post" action="#"></form>
+  <!-- Preloader -->
+  <div id="preloader">
+      <div id="status">&nbsp;</div>
+  </div>
+  <div id="XBody" class="BaseDiv RWidth OEPageXbody OESK_XBody_Default" style="z-index:1000">
+   <div class="OESZ OESZ_DivContent OESZG_XBody">
+    <div class="OESZ OESZ_XBodyContent OESZG_XBody OECT OECT_Content OECTRel"></div>
+    <div class="OESZ OESZ_XBodyFooter OESZG_XBody OECT OECT_Footer OECTAbs">
+     <div id="WEToTop" class="BaseDiv RBoth OEWELinkButton OESK_WELinkButton_Default OEGo  transitions" style="z-index:1" onclick="return OE.Navigate.open(event,'#page-top',1)">
+      <div class="OESZ OESZ_DivContent OESZG_WEToTop">
+       <a class="OESZ OESZ_Text OESZG_WEToTop ContentBox" href="#page-top"><br /></a>
+      </div>
+     </div>
+     <div id="WEPRELOADIMG" class="BaseDiv RKeepRatio OEWEImage OESK_WEImage_Default" style="z-index:1001">
+      <div class="OESZ OESZ_DivContent OESZG_WEPRELOADIMG">
+       <img src="../Files/Image/preloader.gif" class="OESZ OESZ_Img OESZG_WEPRELOADIMG" alt="" />
+      </div>
+     </div>
+    </div>
+    <div id="WEa62f4ad7d1" class="BaseDiv RBoth OEEG8ced4f68 OESK_EG8ced4f68_Default" style="z-index:3;display: none !important;">
+     <div class="OESZ OESZ_DivContent OESZG_WEa62f4ad7d1"></div>
+    </div>
+   </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+  $(function(){// Scroll reveal (apparition au scroll) :
+  	(new ScrollReveal()).reveal('.apply-smoove', { duration: 1000, distance: '500px' });
+  });
+  </script>
+ </body>
+</html>

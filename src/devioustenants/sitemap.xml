@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://">
+  <url>
+    <loc />
+    <lastmod>2017-01-14</lastmod>
+  </url>
+  <url oeid="19ac5b22-4c86-499c-8aaf-78ae28e4f6fb" oelang="DEFAULT">
+    <loc>actualites.htm</loc>
+    <lastmod>2017-01-14</lastmod>
+  </url>
+  <url oeid="a85ddf29-a6f6-4b84-b1ab-5ce1456e88d1" oelang="DEFAULT">
+    <loc>FAQ.htm</loc>
+    <lastmod>2017-01-14</lastmod>
+  </url>
+  <url oeid="773e3ed3-621f-47ae-b09a-ff90f6e53bbf" oelang="DEFAULT">
+    <loc>index.htm</loc>
+    <lastmod>2017-01-14</lastmod>
+  </url>
+</urlset>
